@@ -1,8 +1,6 @@
 text = input("Enter text: ")
-
 compressed = ""
 count = 1
-
 for i in range(len(text)):
     if i == len(text) - 1:
         compressed = compressed + text[i] + str(count)
@@ -11,5 +9,4 @@ for i in range(len(text)):
     else:
         compressed = compressed + text[i] + str(count)
         count = 1
-
 print("Compressed text:", compressed)
