@@ -1,9 +1,7 @@
 password = input("Enter a password: ")
-
 has_upper = False
 has_lower = False
 has_number = False
-
 for letter in password:
     if letter.isupper():
         has_upper = True
@@ -11,7 +9,6 @@ for letter in password:
         has_lower = True
     if letter.isdigit():
         has_number = True
-
 if len(password) >= 8 and has_upper and has_lower and has_number:
     print("Password is accepted")
 else:
